@@ -1938,16 +1938,9 @@ It is inspired by, contains code from and is designed to stay close to [Kubeval]
 
 - [brakeman](https://brakemanscanner.org) — A static analysis security vulnerability scanner for Ruby on Rails applications.
 
-- [Credential Digger](https://github.com/SAP/credential-digger) — Credential Digger is a GitHub scanning tool that identifies hardcoded credentials (Passwords, API Keys, Secret Keys, Tokens, personal information, etc),  and filtering the false positive data through a machine learning model called [Password Model](https://huggingface.co/SAPOSS/password-model). This scanner is able to detect passwords and non structured tokens with a low false positive rate. 
-
 - [Datree](https://datree.io/) — A CLI tool to prevent Kubernetes misconfigurations by ensuring that manifests and Helm charts follow best practices as well as your organization’s policies
 
-- [detect-secrets](https://github.com/Yelp/detect-secrets) — An enterprise friendly way of detecting and preventing secrets in code.
-It does this by running periodic diff outputs against heuristically crafted regex statements,  to identify whether any new secret has been committed. This way, it avoids the overhead of digging  through all git history, as well as the need to scan the entire repository every time.
-
 - [Enlightn](https://www.laravel-enlightn.com/) — A static and dynamic analysis tool for Laravel applications that provides recommendations to improve the performance, security and code reliability of Laravel apps. Contains 120 automated checks.
-
-- [Gitleaks](https://github.com/zricethezav/gitleaks) — A SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.
 
 - [gokart](https://github.com/praetorian-inc/gokart) — Golang security analysis with a focus on minimizing false positives. It is capable of tracing the source of variables and function arguments  to determine whether input sources are safe.
 
@@ -1989,11 +1982,24 @@ It does this by running periodic diff outputs against heuristically crafted rege
 
 - [tfsec](https://github.com/tfsec/tfsec) — Terraform static analysis tool that prevents potential security issues by checking cloud misconfigurations at build time and directly integrates with the HCL parser for better results. Checks for violations of AWS, Azure and GCP security best practice recommendations.
 
-- [trufflehog](https://trufflesecurity.com) — Find credentials all over the place
-TruffleHog is an open source secret-scanning engine that resolves exposed secrets across your company’s entire tech stack. 
-
 - [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner) — A general purpose network security scanner with an extensible plugin system for  detecting high severity RCE-like vulnerabilities with high confidence. Custom detectors for finding vulnerabilities (e.g. open APIs) can be added.
 
+<h2 id="secret-detection">Secret Detection</h2>
+
+- [Credential Digger](https://github.com/SAP/credential-digger) — Credential Digger is a GitHub scanning tool that identifies hardcoded credentials (Passwords, API Keys, Secret Keys, Tokens, personal information, etc),  and filtering the false positive data through a machine learning model called [Password Model](https://huggingface.co/SAPOSS/password-model). This scanner is able to detect passwords and non structured tokens with a low false positive rate. 
+
+- [detect-secrets](https://github.com/Yelp/detect-secrets) — An enterprise friendly way of detecting and preventing secrets in code.
+It does this by running periodic diff outputs against heuristically crafted regex statements,  to identify whether any new secret has been committed. This way, it avoids the overhead of digging  through all git history, as well as the need to scan the entire repository every time.
+
+- [GitGuardian Internal Monitoring](https://www.gitguardian.com/monitor-internal-repositories-for-secrets) - Continuously scan all public and private Git repositories listed under your GitHub, GitHub Enterprise, GitLab, or Bitbucket organizations. Catch secrets before they leave the developer workstations with [GitGuardian’s CLI, ggshield](https://gitguardian.webflow.io/ggshield). Connect GitGuardian natively to your SIEM, ITSM, ticketing systems, messaging apps, or configure your webhooks.
+
+- [Gitleaks](https://github.com/zricethezav/gitleaks) — A SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.
+
+- [HasMySecretLeaked](https://www.gitguardian.com/hasmysecretleaked) - Search across 20 million exposed secrets in public GitHub repositories, gists, issues,and comments.
+HasMySecretLeaked is a project from GitGuardian that aims to help individual users and organizations verify if their developer secrets have leaked on public repositories, gists, and issues on GitHub projects.
+
+- [trufflehog](https://trufflesecurity.com) — Find credentials all over the place
+TruffleHog is an open source secret-scanning engine that resolves exposed secrets across your company’s entire tech stack.
 
 <h2 id="smart-contracts">Smart Contracts</h2>
 
